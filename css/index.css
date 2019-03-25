@@ -12,6 +12,11 @@ a{
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    overflow-y:auto;
+}
+
+.row{
+    width: 100%;
 }
 .blue{
     background-color: rgb(75, 89, 225);
@@ -91,15 +96,17 @@ a{
 }
 
 /*TITULO*/
-.title{
+.card{
     margin:20px;
     margin-left: 6%;
     padding: 10px;
     width:80%;
-    background-color: rgba(75, 89, 225, .7);
 
+    border-radius: 5px;
+}
+.title{
     font-family: 'Share Tech Mono';
-
+    background-color: rgba(75, 89, 225, .7);
 }
 .title h1{
     font-size: 40px;
@@ -121,19 +128,46 @@ a{
     min-width: 200px;
     margin:15px;
     margin-left: 10%;
-    border:1px solid black;
     float:left;
 }
 .info{
-    margin-left: 6%;
+    margin-left: 3%;
     float:left;
-    width: 60%;
+    width: 50%;
     min-width: 260px;
-    border:1px solid black;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .content{
-    width: 100%;
-    border:1px solid black;
+    background-color: rgba(107, 122, 253, 0.3);
+    overflow: hidden;
+}
+
+.row h1{
+    font-size: 40px;
+    font-family:  'VT323';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    margin:0px 20px; 
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row p{
+    padding: 2px;
+    margin-left:4%;
+    font-size: 20px;
+
+}
+.row .i{
+
+    font-weight: bold;
 }
 /*
 fonts:
