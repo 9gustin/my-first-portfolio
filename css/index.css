@@ -1,0 +1,146 @@
+/*Todo*/
+body{
+    background-color: rgb(214, 214, 214);
+    font-family:'QuickSand' ;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.blue{
+    background-color: rgb(75, 89, 225);
+}
+.orange{
+    background-color: rgb(225, 116, 75);
+}
+.yellow{
+    background-color: rgb(216, 225, 75);
+}
+.green{
+    background-color:rgb(118, 225, 75);
+}
+.pink{
+    background-color: rgb(240, 181, 206);
+}
+/*Menu*/
+.menu{
+    position:fixed;
+    width: 90px;
+    height: 100vh;
+    overflow: visible;
+}
+.menu li{
+    list-style: none;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90px;
+
+    transition: all 1s;
+}
+.menu li:hover {
+    width:200px;
+}
+.nav-button{
+    color:black;
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+    font-family: 'VT323';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .83;
+    transition: all 1s;
+}
+.nav-button:hover{
+    opacity: 1;
+    width: 200px;
+}
+.nav-button label{
+    display: none;
+    visibility: hidden;
+    opacity: .1;
+    transition: all 2s;
+}
+.menu li .nav-button:hover label{
+    display: inline;
+    visibility: visible;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.nav-button img{
+    width: 50px;
+}
+/*FIN MENU*/
+
+/*CONTENEDOR*/
+.container{
+    margin-left: 90px;
+    display: inline-block;
+}
+
+/*TITULO*/
+.title{
+    margin:20px;
+    margin-left: 6%;
+    padding: 10px;
+    width:80%;
+    background-color: rgba(75, 89, 225, .7);
+
+    font-family: 'Share Tech Mono';
+
+}
+.title h1{
+    font-size: 40px;
+    margin:2px;
+}
+.title h2{
+    font-size: 20px;
+    float: right;
+    margin:2px;
+}
+.foto img{
+    width: 100%;
+
+    border-radius: 10px;
+
+}
+.foto{
+    width: 20%;
+    min-width: 200px;
+    margin:15px;
+    margin-left: 10%;
+    border:1px solid black;
+    float:left;
+}
+.info{
+    margin-left: 6%;
+    float:left;
+    width: 60%;
+    min-width: 260px;
+    border:1px solid black;
+}
+.content{
+    width: 100%;
+    border:1px solid black;
+}
+/*
+fonts:
+    font-family: 'Major Mono Display';
+    font-family: 'Share Tech Mono';
+    font-family: 'VT323';
+colors:
+    white: rgb(180, 185, 236);
+
+*/
