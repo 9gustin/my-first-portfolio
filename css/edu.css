@@ -1,0 +1,63 @@
+.title{
+    background-color: rgba(225, 116, 75,.7);
+}
+.title h1{
+    margin: 10px auto;
+}
+
+.content{
+    background-color: rgba(225, 116, 75,.3);
+
+}
+
+.educacion{
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(225, 116, 75,.3);
+    border-radius: 14px;
+    padding-bottom:10px; 
+    margin-top:15px;
+
+    transition: all .8s;
+}
+
+.educacion img{
+    width: 50px;
+    float: left;
+    margin: 20px  3% 0px 10% ;
+}
+
+.educacion .contenido{
+    float: left;
+    width: 80%;
+}
+
+.educacion .contenido h1{
+    padding: 10px;
+    font-family:'PT Mono';
+    margin-left: 8%;
+}
+
+.educacion .contenido h2{
+    font-size: 20px;
+    margin-left: 8%;
+    margin-top: 5px;
+}
+.educacion .contenido h3{
+    font-size: 15px;
+    margin-left: 8%; 
+    margin-top: 5px;
+
+}
+.educacion .contenido img{
+    width: 25px;
+    margin:10px;
+    padding: 0;
+}
+.content .cursos{
+    width: 100%;
+    text-align: center;
+}
+.educacion:hover{
+    background-color: rgba(225, 116, 75,.5);
+}

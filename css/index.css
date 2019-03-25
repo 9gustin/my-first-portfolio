@@ -94,6 +94,7 @@ a{
 .container{
     margin-left: 90px;
     display: inline-block;
+    width: 87%;
 }
 
 /*TITULO*/
@@ -102,11 +103,11 @@ a{
     margin-left: 6%;
     padding: 10px;
     width:80%;
-    overflow: hidden;
+    min-width: 300px;
     border-radius: 5px;
 }
 .title{
-    font-family: 'Share Tech Mono';
+    font-family: 'PT Mono';
     background-color: rgba(75, 89, 225, .7);
 }
 .title h1{
@@ -143,6 +144,7 @@ a{
 .content{
     background-color: rgba(107, 122, 253, 0.3);
     overflow: hidden;
+    transition: all 2s;
 }
 
 .row h1{
@@ -167,8 +169,16 @@ a{
 
 }
 .row .i{
-
     font-weight: bold;
+}
+
+.row p a{
+    padding: 2px 15px;
+    transition: all .8s;
+    border-radius: 15px;
+}
+.row p a:hover{
+    background-color: rgba(107, 122, 253, 0.6);
 }
 /*
 fonts:
