@@ -102,8 +102,8 @@ a{
     margin:20px;
     margin-left: 6%;
     padding: 10px;
-    width:80%;
-    min-width: 300px;
+    width:77%;
+    min-width: 200px;
     border-radius: 5px;
 }
 .title{
@@ -129,11 +129,11 @@ a{
     width: 20%;
     min-width: 200px;
     margin:15px;
-    margin-left: 10%;
+    margin-left: 9%;
     float:left;
 }
 .info{
-    margin-left: 3%;
+    margin-left: 2%;
     float:left;
     width: 50%;
     min-width: 260px;
