@@ -9,7 +9,9 @@
     background-color: rgba(225, 116, 75,.3);
 
 }
-
+.title h1{
+    font-size: 25px;
+}
 .educacion{
     width: 100%;
     display: inline-block;

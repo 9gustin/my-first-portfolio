@@ -1,0 +1,38 @@
+.title{
+    background-color:rgba(114, 189, 113,.7);
+}
+.title h1{
+    margin: 10px auto;
+}
+
+.content{
+    background-color:rgba(114, 189, 113,.2);
+}
+.title h1{
+    font-size: 25px;
+}
+
+.cont{
+    background-color: rgba(114, 189, 113,.2);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.cont h2{
+    width:100%;
+    padding: 8px;
+    font-size: 20px;
+    background-color: rgba(114, 189, 113,.5);
+}
+
+.row{
+    padding:10px;
+}
+
+.row label{
+    font-size: 20px;
+}
+
+.row .tel{
+    width:25px;
+    margin-left: 8px;
+}

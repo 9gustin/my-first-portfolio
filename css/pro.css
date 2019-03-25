@@ -1,0 +1,21 @@
+.title{
+    background-color: rgba(230, 206, 87,.7);
+}
+.title h1{
+    margin: 10px auto;
+}
+
+.content{
+    background-color: rgba(230, 206, 87,.5);
+
+}
+.title h1{
+    font-size: 25px;
+}
+
+.content{
+    font-family: 'VT323';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
