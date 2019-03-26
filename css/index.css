@@ -180,6 +180,22 @@ a{
 .row p a:hover{
     background-color: rgba(107, 122, 253, 0.6);
 }
+
+.download{
+    background-color: rgba(107, 122, 253, 1);
+    text-align: center;
+}
+
+.download div{
+    width: 100%;
+    overflow: hidden;
+}
+.download .dwn{
+    font-family: 'VT323';
+    font-size: 25px;
+    font-weight: bold;
+}
+
 /*
 fonts:
     font-family: 'Major Mono Display';
