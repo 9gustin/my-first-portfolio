@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Test - Push</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+body{
+    background: black;
+}
+.btn-click{
+    position: fixed;
+    bottom: 0;
+    padding: 50px 0;
+}
+div{
+    max-width: 100vw;
+}
+#copy{
+    display: none;
+    color: green;
+}
+h4{
+    color: green;
+}
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <a class="btn btn-light col-xs-12 col-md-12 col-lg-12 btn-click" onclick="javascript:PedirPermiso()">Click aqui</a>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12">
+                <h4>Tu token:</h4>
+                <textarea id="token"></textarea>
+                <a class="btn btn-light" onclick="javascript:copiar();">Copiar</a>
+                <label id="copy">Copiado</label>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/6.6.0/firebase.js"></script>
+
+<script src="firebase-messaging-sw.js"></script>
+<script src="config.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
