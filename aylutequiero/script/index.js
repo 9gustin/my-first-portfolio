@@ -18,7 +18,7 @@ function Login(){
         let user = users.find(user => user.username == username && user.password == password);
         if(user){
             sessionStorage.setItem('userAA', username);
-            window.location = './pages/in';
+            window.location = './pages/In';
         }
         else{
             LoginFailed();
