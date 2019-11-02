@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contador</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="container-fluid">
+    <div class="row" style="margin: 15px 0;">
+        <div class="col-5 input">
+            <input type="date" name="trip-start" id="date-end" class="form-control form-control-sm">
+        </div>
+        <div class="col-3 input">
+                <input type="text" id="time-end" class="form-control form-control-sm" placeholder="hh:mm:ss">
+        </div>
+        <div class="col-4">
+            <a class="btn btn-sm btn-dark text-light" id="btn-establecer">Establecer</a>
+        </div>
+    </div>
+    <main class="row to-center" id="counter">
+        <div>
+            <span class="number" id="span-anios">10</span> <br>
+            <label class="number-description">Años</label>
+        </div>
+        <div>
+            <span class="number" id="span-meses">11</span> <br>
+            <label class="number-description">Meses</label>
+        </div>
+        <div>
+            <span class="number" id="span-dias">10</span> <br>
+            <label class="number-description">Dias</label>
+        </div>
+        <div>
+            <span class="number" id="span-horas">15</span> <br>
+            <label class="number-description">Horas</label>
+        </div>
+        <div>
+            <span class="number" id="span-minutos">55</span> <br>
+            <label class="number-description">Minutos</label>
+        </div>
+        <div>
+            <span class="number" id="span-segundos">25</span> <br>
+            <label class="number-description">Segundos</label>
+        </div>
+    </main>
+    <script src="./scripts/count.js"></script>
+    <script>
+        document.querySelector('#btn-establecer').addEventListener('click', actualizar);
+
+        window.onload = () => {
+            document.querySelector('#date-end').value = '2019-12-25';
+            document.querySelector('#time-end').value = '00:00:00';
+            actualizar();
+        }
+
+        function actualizar(){
+            clearInterval(counter);
+            setInitDate(new Date().toJSON());
+            let dEnd = `${document.querySelector('#date-end').value.substring(0,10)} ${document.querySelector('#time-end').value}`;
+            setFinalDate(dEnd);
+
+            Count().then(result => {
+                if (!result) { document.querySelector('#counter').style.display = 'none'; }
+            });
+        }
+    </script>
+</body>
+
+</html>

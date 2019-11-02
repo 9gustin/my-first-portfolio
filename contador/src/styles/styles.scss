@@ -1,0 +1,23 @@
+//Section: Config
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$primary: rgb(39,39,39);
+
+$text: #bcbcbc;
+
+$font: 'Montserrat';
+
+//Section: HTML
+.input{
+    padding: 0!important;
+}
+body{
+    background-color: $primary!important;
+    color: $text!important;
+}
+.to-center{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

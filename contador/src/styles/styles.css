@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.input {
+  padding: 0 !important;
+}
+
+body {
+  background-color: #272727 !important;
+  color: #bcbcbc !important;
+}
+
+.to-center {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
