@@ -1,5 +1,5 @@
 const FILES_TO_CACHE = [
-    './index.html',
+    '/homer-pwa/index.html',
 ];
 const CACHE_NAME = 'homers-pwa';
 
@@ -21,7 +21,7 @@ self.addEventListener('fetch', function (evt) {
             .catch(() => {
                 return caches.open(CACHE_NAME)
                     .then((cache) => {
-                        return cache.match('offline.html');
+                        return cache.match('/homer-pwa/index.html');
                     });
             })
     );
